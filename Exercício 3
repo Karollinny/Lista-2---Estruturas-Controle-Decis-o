@@ -1,0 +1,14 @@
+def NumeroMaior(primeiroNumero, segundoNumero, terceiroNumero):
+    if (primeiroNumero >= segundoNumero and primeiroNumero >= terceiroNumero):
+        print("o primeiro numero é maior que os outros numeros")
+    if (segundoNumero >= primeiroNumero and segundoNumero >= terceiroNumero):
+        print("O segundo numero é maior que os outros numeros")
+    if (terceiroNumero >= primeiroNumero and terceiroNumero >= segundoNumero):
+       print("o terceiro numero é maior que os outros numeros")
+
+primeiroNumero = int(input("digite o primeiro numero:"))
+segundoNumero = int(input("digite o segundo numero:"))
+terceiroNumero = int(input("digite o terceiro numero:"))
+
+
+NumeroMaior(primeiroNumero, segundoNumero, terceiroNumero)
