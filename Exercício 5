@@ -1,0 +1,30 @@
+def mediaPares(numero1, numero2, numero3, numero4, somaPares, quantidadePares):
+    if numero1 % 2 == 0:
+        somaPares = somaPares + numero1
+        quantidadePares = quantidadePares + 1
+    if numero2 % 2 == 0:
+        somaPares = somaPares + numero2
+        quantidadePares = quantidadePares + 1
+    if numero3 % 2 == 0:
+        somaPares = somaPares + numero3
+        quantidadePares = quantidadePares + 1
+    if numero4 % 2 == 0:
+        somaPares = somaPares + numero4
+        quantidadePares = quantidadePares + 1
+
+    return somaPares, quantidadePares
+
+somaPares = 0
+quantidadePares = 0
+
+numero1 = int(input("Digite o primeiro número:"))
+numero2 = int(input("Digite o segundo número:"))
+numero3 = int(input("Digite o terceiro número:"))
+numero4 = int(input("Digite o quarto número:"))
+
+somaPares, quantidadePares = mediaPares(numero1, numero2, numero3, numero4, somaPares, quantidadePares)
+
+if quantidadePares > 0:
+    print(f"Média dos pares: {somaPares / quantidadePares}")
+else:
+    print("Nenhum par digitado.")
